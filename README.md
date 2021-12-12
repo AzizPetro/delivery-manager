@@ -1,5 +1,5 @@
 # Delivery Manager
-The aim of the project is creating an application which manages new deliveries and their states.
+The aim of the project is creating an application which manages deliveries and their states.
 
 ### SETUP
 - Maven 3.6.1
@@ -14,7 +14,7 @@ Run start.cmd in order to run application from command line.
 
 ### USAGE
 
-Client can send querys and mutations with GraphQl in order to get all deliveries, received deliveries, 
+Client can send queries and mutations with GraphQl in order to get all deliveries, received deliveries, 
 not yet received deliveries, add new delivery, remove existing delivery and update state of existing delivery.
 Also from localhost:8080/playground, queries and mutations can be send.
 

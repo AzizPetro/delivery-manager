@@ -1,0 +1,22 @@
+type Query {
+    deliveries: [Delivery]
+    receivedDeliveries: [Delivery]
+    notYetReceivedDeliveries: [Delivery]
+}
+
+type Delivery {
+    deliveryId: ID!
+    product: String
+    supplier: String
+    quantity: Int
+    expectedDate: String
+    expectedWarehouse: String
+    received: Boolean
+}
+
+type Mutation {
+    newDelivery(deliveryId: ID!, product: String!, supplier: String!,
+        quantity: Int!, expectedDate: String!, expectedWarehouse: String!) : Delivery!
+    deleteDelivery(deliveryId: ID!) : Boolean
+    updateDelivery(deliveryId: ID!) : Delivery
+}
